@@ -1,0 +1,210 @@
+{
+	"locations":[
+
+	{
+
+		"Name": "Redstone Ridge",
+
+		"mining_operation": "Surface Mining",
+
+		"resources": "Excavator, Drill, Truck",
+
+		"cost": 50000,
+
+		"unit": "USD",
+
+		"man_days": "120",
+
+		"positive_outcome_probability": 0.6,
+
+		"image": "https://tse2.mm.bing.net/th/id/OIP.SyV3TP8PPwtc689tiSJ43AHaEw?w=264&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7.png"
+
+	},
+
+	{
+
+		"Name": "Quartz Plains",
+
+		"mining_operation": "Placer Mining",
+
+		"resources": "Bulldozer, Truck",
+
+		"cost": 45000,
+
+		"unit": "USD",
+
+		"man_days": "110",
+
+		"positive_outcome_probability": 0.8,
+
+		"image":"https://tse2.mm.bing.net/th/id/OIP.LeMq8VOJb1DrMrCdANOqaAHaFj?w=241&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7.png"
+
+	},
+
+	{
+
+		"Name": "Granite Peak",
+
+		"mining_operation": "Mountaintop Removal",
+
+		"resources": "Excavator, Crane, Loader",
+
+		"cost": 65000,
+
+		"unit": "USD",
+
+		"man_days": "140",
+
+		"positive_outcome_probability": 0.82,
+
+		"image": "https://tse3.mm.bing.net/th/id/OIP.2TX5efiYHLv1wBlXcChkpAHaE8?w=236&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7.png"
+
+	},
+
+	{
+
+		"Name": "Dustwind Basin",
+
+		"mining_operation": "Solution Mining",
+
+		"resources": "Shovel, Truck, Jackhammer",
+
+		"cost": 28000,
+
+		"unit": "USD",
+
+		"man_days": "75",
+
+		"positive_outcome_probability": 0.55,
+
+		"image":"https://tse3.mm.bing.net/th/id/OIP.duvo8Vko-IJ5OcrHj27reQHaE8?w=237&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7.png"
+
+	},
+
+	{
+
+		"Name": "SilverTrail Dunes",
+
+		"mining_operation": "In-situ leaching",
+
+		"resources": "Shovel, Crane, Loader",
+
+		"cost": 58000,
+
+		"unit": "USD",
+
+		"man_days": "125",
+
+		"positive_outcome_probability": 0.73,
+
+		"image":"https://tse1.mm.bing.net/th/id/OIP.KB7XDQBL2QX8vojTyZ-GIQHaEB?pid=ImgDet&w=178&h=96&c=7&dpr=1.5.png"
+
+	}
+	],
+
+
+	"resources":[{
+		"location":"Redstone Ridge",
+		"supplier name":"HeavyMachines Inc.",
+		"resource":"Excavator"
+
+	},
+
+	{
+		"location":"Redstone Ridge",
+		"supplier name":"DrillPro Ltd.",
+		"resource":"Drill"
+
+	},
+
+	{
+		
+		"location":"Redstone Ridge",
+		"supplier name":"Transport Max.",
+		"resource":"Truck"
+
+	},
+
+	{
+		"location":"Quartz Plains",
+		"supplier name":"Bulldozer Bros.",
+		"resource":"Bulldozer"
+
+	},
+
+	{
+		"location":"Quartz Plains",
+		"supplier name":"Trucks Ltd.",
+		"resource":"Truck"
+
+	},
+
+	{
+		"location":"Granite Peak",
+		"supplier name":"HeavyMachines Inc.",
+		"resource":"Excavator"
+
+	},
+
+	{
+		"location":"Granite Peak",
+		"supplier name":"LiftCo",
+		"resource":"Crane"
+
+	},
+
+	{
+		"location":"Granite Peak",
+		"supplier name":"LoadFast",
+		"resource":"Loader"
+
+	},
+
+	{
+		"location":"Dustwind Basin",
+		"supplier name":"Tools Ltd",
+		"resource":"Shovel"
+
+	},
+
+	{
+		"location":"Dustwind Basin",
+		"supplier name":"Transport Max.",
+		"resource":"Truck"
+
+	},
+
+	{
+		"location":"Dustwind Basin",
+		"supplier name":"Hammer Corp",
+		"resource":"JackHammer"
+
+	},
+
+	{
+		"location":"SilverTrail Dunes",
+		"supplier name":"ToolTech",
+		"resource":"Shovel"
+
+	},
+
+	{
+		"location":"SilverTrail Dunes",
+		"supplier name":"Cranes Ltd",
+		"resource":"Crane"
+
+	},
+
+	{
+		"location":"SilverTrail Dunes",
+		"supplier name":"LoadFast",
+		"resource":"Loader"
+
+	}
+
+
+	
+
+
+]
+}

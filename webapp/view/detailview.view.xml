@@ -1,0 +1,139 @@
+<mvc:View controllerName="app.mininginfo.controller.detailview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:comp="sap.ui.comp.filterbar" xmlns:core="sap.ui.core">
+    <Page id="page" title="detail view">
+
+     <content>
+            <f:SimpleForm  >
+            
+
+<VBox>
+<HBox >
+<core:Icon src="sap-icon://map" class="sapUiTinyMarginEnd"></core:Icon>
+
+                <Label  text="Location: "  design="Bold" class= "Bold-class, sapUiSmallMarginBottom"></Label>
+              
+                <Text  text="{MiningModel>Name}" width="406px"></Text>
+             
+                  
+                
+
+            
+<core:Icon src="sap-icon://wrench" class="sapUiTinyMarginEnd" ></core:Icon>
+                <Label  text="Mining Operation:" design="Bold" class= "Bold-class" ></Label>
+                <Text  text="{MiningModel>mining_operation}"></Text>
+             
+</HBox>
+
+
+
+
+       
+<HBox  >          
+<core:Icon src="sap-icon://settings" class="sapUiTinyMarginEnd" ></core:Icon>
+                <Label text="Resources used:" design="Bold" class= "Bold-class, sapUiSmallMarginBottom" ></Label>
+                <Text text="{MiningModel>resources}" width="355px"></Text>
+                
+               
+                
+                    
+<core:Icon src="sap-icon://money-bills" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Cost incurred:" design="Bold" class= "Bold-class"></Label>
+                <Text text=  "{parts:[{path:'MiningModel>cost'},{path:'MiningModel>unit'}]}"></Text>
+               </HBox>
+
+
+    <HBox>                  
+<core:Icon src="sap-icon://time-entry-request" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Days Worked:" design="Bold" class= "Bold-class"></Label>
+                <Text text="{MiningModel>man_days}" width="372px"></Text>
+             
+               
+                
+                      
+<core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"></core:Icon>
+                <Label text="Mining Outcome Chance:" design="Bold" class= "Bold-class"></Label>
+                <Text text="{MiningModel>positive_outcome_probability}"></Text>
+               
+               </HBox>
+
+               </VBox>  
+               
+            </f:SimpleForm>
+
+            <IconTabBar>
+             <items>
+                 <IconTabFilter icon="sap-icon://picture" iconColor="Contrast" tooltip="Images">
+                 <Panel headerText="{MiningModel>mining_operation}">
+                 <VBox>
+                    <Image src="{MiningModel>image}" width="30%"/>
+                 
+                 </VBox>
+                 </Panel>
+                <!-- <VBox>
+                  <HBox>
+                      <Label text="tools Name" design="Bold" class= "Bold-class"></Label>
+                      <Text text="{ToolModel>toolsName}"></Text>
+                  </HBox>
+                  <HBox>
+                      <Label text="Weight" design="Bold" class= "Bold-class"></Label>
+                      <Text text="{ToolModel>weight}"></Text>
+                  </HBox>
+                  <HBox>
+                        <Label text="Warranty" design="Bold" class= "Bold-class"></Label>
+                        <Text text="{ToolModel>warranty}"></Text>
+                  </HBox>
+                </VBox> -->
+                </IconTabFilter>
+               
+                  
+
+             <IconTabFilter icon="sap-icon://supplier" iconColor="Contrast" tooltip="Supplier list">
+
+                <Label text="Supplier" ></Label>
+                 <Input id="idInptSupp" width="200px" liveChange="onFilter"></Input>
+
+                 <Label text="Resources" ></Label>
+                 <Input id="idResources" width="200px" liveChange="onFilter" ></Input>
+
+
+                <Table items="{MiningModel>/resources}" id="idResTable">
+
+                <columns>
+                 <Column>
+                <Text text="location"></Text>
+ 
+                </Column>
+               
+                <Column>
+                <Text text="supplier name"></Text>
+               
+                </Column>
+               
+                 <Column>
+                <Text text="resource"></Text>
+                </Column>
+              
+                </columns>
+                <ColumnListItem>
+                <cells>
+               <Text text="{MiningModel>location}"></Text>
+                <Input value="{MiningModel>supplier name}" showValueHelp="true"
+                valueHelpRequest="onF4Help" ></Input>
+                <Text text="{MiningModel>resource}"></Text>
+              
+ 
+                </cells>
+                </ColumnListItem>
+                </Table>
+                </IconTabFilter>
+             </items>
+           
+            </IconTabBar>
+            </content>
+
+
+
+
+	</Page>
+</mvc:View>
